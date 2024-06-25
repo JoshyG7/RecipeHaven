@@ -1,0 +1,230 @@
+body{
+    background-color: rgb(27, 26, 26);
+}
+.box{
+    width: 100%;
+    height: 100%;
+    overflow-y: hidden;
+}
+.heading{
+    color: white;
+    background-color: rgb(19, 19, 44);
+    margin-top: -22px;
+    width: 100%;
+    height: 87px;
+}
+.heading h1{
+    display: inline-block;
+    position: relative;
+    top: 10px;
+    left: 60px;
+}
+.search, .searchButton{
+    position: relative;
+    top: 10px;
+    left: 690px;
+    border-radius: 10px;
+    border: 1px solid white;
+    font-weight: bolder;    
+    font-size: 15px;
+}
+.search{
+    width: 270px;
+    height: 29px;
+    color: black;
+    padding-left: 10px;
+}
+.searchButton{
+    height: 33px;
+    width: 70px;
+    background-color: rgb(25, 203, 203);
+    color: black;
+    cursor: pointer;
+}
+.searchButton:hover{
+    background-color: white;
+}
+.heading span{
+    color: rgb(25, 203, 203);
+}
+.result{
+    color: white;
+    font-size: 23px;
+    font-weight: bolder;
+    margin-top: 15px;
+    margin-left: 60px;
+}
+.info{
+    width: 280px;
+    height: 300px;
+    /* background-color: antiquewhite; */
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-radius: 18px;
+    background-color: rgba(110, 110, 110, 0.25);
+    backdrop-filter: blur(4px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 6);
+}
+.recipe{
+    margin-left: 15px;
+}
+.info img{
+    width: 280px;
+    height: 199px;
+    border-bottom: 2px solid black;
+}
+.info h1{
+    font-size: 18px;
+    /* font-weight: bolder; */
+    color: white;
+    margin-top: 0;
+    text-align: center;
+}
+.info p{
+    font-size: 20px;
+    font-weight: lighter;
+    color: white;
+    margin-top: -10px;
+    text-align: center;
+}
+.info button{
+    margin-left: 40px;
+    border: 1px solid white;
+    background-color: rgb(25, 203, 203);
+    border-radius: 10px;
+    width: 200px;
+    height: 30px;
+    margin-top: -10px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+.info button:hover{
+    background-color: white;
+    color: black;
+}
+.loading img{
+    position: fixed;
+    top: 20px;
+    left: 530px;
+    width: 200px;
+    height: 200px;  
+    background-color: white;
+    border: solid 2px black;
+    border-radius: 15px;
+}
+.loading h1{
+    position: fixed;
+    top: 200px;
+    left: 534px;
+    font-size: 35px;
+    color: white;
+}
+
+.information{
+    display: inline-block;
+}
+.information img{
+    width: 340px;
+    height: 190px;
+    position: relative;
+    top: 30px;
+    left: 18px;
+    border: solid 2px black;
+    border-radius: 20px;
+}
+.boxing{
+    /* background-color: rgba(0, 255, 255, 0.342); */
+    width: 60%;
+    /* height: 280px; */
+    position: relative;
+    top: -160px;
+    left: 380px;
+}
+.strCategory{
+    display: inline-block;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.strArea{
+    margin-left: 40px;
+    display: inline-block;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.strMeal{
+    color: rgb(25, 203, 203);
+    font-weight: bolder;
+    font-size: 31px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.strInstructions{
+    color: white;
+    /* font-weight: bolder; */
+    font-size: 23px;
+    position: relative;
+    /* top: -340px; */
+    left: 30px;
+    margin-top: -70px;
+    width: 90%;
+}
+.url{
+    width: 150px;
+    height: 60px;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    background-color: rgb(25, 203, 203);
+    border-radius: 10px;
+    border: solid 1px white;
+    color: black;
+    font-weight: bolder;
+    margin-top: 18px;
+    text-decoration: none;
+    top: 10px;
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.url:hover{
+    background-color: white;
+}
+.showInfo{
+    width: 80%;
+    /* height: 200px; */
+    border: 5px solid rgba(110, 110, 110, 0.25);
+    border-top: 50px solid rgba(110, 110, 110, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 6);
+    backdrop-filter:  blur(4px);
+    border-radius: 15px;
+    position: absolute;
+    left: 140px;
+    top: 30px;
+}
+.showInfo h1{
+    background-color: white;
+    color: black;
+    display: inline-block;
+    border-radius: 50%;
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    padding-top: 7px;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, 'Times New Roman', Times, serif;
+    position: absolute;
+    top: -90px;
+    right: -30px;
+    cursor: pointer;
+}
+.showInfo h1:hover{
+    background-color: rgb(25, 203, 203);
+    color: white;
+}
