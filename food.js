@@ -5,8 +5,10 @@ let box=document.querySelector(".box");
 let loading=document.querySelector(".loading");
 let showInfo=document.querySelector(".showInfo");
 let information=document.querySelector(".information");
+let AdditionalFeatures=document.querySelector(".AdditionalFeatures");
 let infoName="cake";
 let d;
+let searchUrl;
 box.style.visibility = "hidden";
 function createInfo(){
     for(let i=0;i<d;i++){
@@ -19,12 +21,14 @@ function createInfo(){
     }
     loading.style.visibility = "hidden";
     box.style.visibility = "visible";
+    AdditionalFeatures.style.visibility = "visible";
     getclick();
 }
 
 const getInto=async()=>{
     loading.style.visibility = "visible";
     box.style.visibility = "hidden";
+    AdditionalFeatures.style.visibility = "hidden";
     try{
         searchUrl=`https://themealdb.com/api/json/v1/1/search.php?s=${infoName}`;
         let respone= await fetch(searchUrl);
@@ -37,6 +41,7 @@ const getInto=async()=>{
         alert("We don't have information about this Recipe.");
         loading.style.visibility = "hidden";
         box.style.visibility = "visible";
+        AdditionalFeatures.style.visibility = "visible";
     }
     createInfo();
     }
@@ -59,6 +64,7 @@ function getclick() {
     let boxes=document.querySelectorAll(".info");
     boxes.forEach((box1,index)=>{
         box1.addEventListener("click",()=>{
+            AdditionalFeatures.style.visibility = "hidden";
             box.style.visibility = "hidden";
             showInfo.style.visibility = "visible";
             box.style.position = "fixed";
@@ -77,4 +83,21 @@ showInfo.querySelector("h1").addEventListener("click",()=>{
     box.style.visibility = "visible";
     showInfo.style.visibility = "hidden";
     box.style.position = "static";
+    AdditionalFeatures.style.visibility = "visible";
 })
+
+function forAdditional(){
+    AdditionalFeatures.querySelector(".AdditionalFeatures ul").classList.toggle("showing");
+}
+AdditionalFeatures.querySelector(".Additional").addEventListener("click",()=>{
+    AdditionalFeatures.querySelector(".AdditionalFeatures ul").classList.toggle("showing");
+})
+let item1=document.querySelectorAll(".item1");
+    item1.forEach((itemInfo,index)=>{
+        itemInfo.addEventListener("click",()=>{
+            infoName=itemInfo.innerText;
+            recipe.innerHTML = '';
+            forAdditional();
+            getInto();
+        })
+    })
