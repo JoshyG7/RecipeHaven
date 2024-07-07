@@ -22,7 +22,7 @@ body{
 .search, .searchButton{
     position: relative;
     top: 10px;
-    left: 690px;
+    left: 630px;
     border-radius: 10px;
     border: 1px solid white;
     font-weight: bolder;    
@@ -55,7 +55,7 @@ body{
     margin-left: 60px;
 }
 .info{
-    width: 280px;
+    width: 260px;
     height: 300px;
     /* background-color: antiquewhite; */
     display: inline-block;
@@ -71,7 +71,7 @@ body{
     margin-left: 15px;
 }
 .info img{
-    width: 280px;
+    width: 260px;
     height: 199px;
     border-bottom: 2px solid black;
 }
@@ -227,4 +227,47 @@ body{
 .showInfo h1:hover{
     background-color: rgb(25, 203, 203);
     color: white;
+}
+.Additional{
+    width: 370px;
+    height: 40px;
+    color: white;
+    background-color: rgb(18, 18, 37);
+    border: 3px solid black;
+    font-size: 20px;
+    position: absolute;
+    top: 20px;
+    left: 360px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+.AdditionalFeatures ul{
+    background-color: black;
+    display: inline-block;
+    position: absolute;
+    top: 40px;
+    left: 360px;
+    font-weight: lighter;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    color: white;
+    list-style: none;
+    width: 347px;
+}
+.AdditionalFeatures li{
+    list-style: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.AdditionalFeatures li:hover{
+    background-color: rgb(129, 126, 126);
+}
+.showing{
+    visibility: hidden;
 }
